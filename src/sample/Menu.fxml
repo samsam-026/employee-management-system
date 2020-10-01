@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0"
+            prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Menu">
+    <children>
+        <Label layoutX="502.0" layoutY="51.0">
+            <font>
+                <Font name="Arial" size="14.0"/>
+            </font>
+        </Label>
+        <MenuBar prefHeight="25.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Employee">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addEmployee" text="Add Employee"/>
+                        <MenuItem mnemonicParsing="false" onAction="#updateDeleteViewEmployee" text="Search Employee"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Customer">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addCustomer" text="Add Customer"/>
+                        <MenuItem mnemonicParsing="false" onAction="#updateDeleteViewCustomer" text="Search Customer"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Contract">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addContract" text="Add Contract"/>
+                        <MenuItem mnemonicParsing="false" onAction="#updateDeleteViewContract" text="Search Contract"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Work">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addWork" text="Add Work"/>
+                        <MenuItem mnemonicParsing="false" onAction="#updateDeleteViewWork" text="Search Work"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Role">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#viewRole" text="View Role"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Salary">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#viewSalary" text="View Salary"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Exit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#exitScene" text="Exit"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label layoutX="132.0" layoutY="80.0" text="Company Database">
+            <font>
+                <Font name="Arial" size="38.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
